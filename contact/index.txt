@@ -1,0 +1,33 @@
+% Contact
+
+I'm Will Maier; here's how you can reach me.
+
+# Web
+
+ * [http://will.m.aier.us/]()
+ * [http://twitter.com/wcmaier]()
+ * [http://github.com/wcmaier]()
+ * [http://bitbucket.org/wcmaier]()
+ * [http://hep.wisc.edu/~wcmaier]()
+
+# Email
+
+ * <willmaier@ml1.net>
+ * <will@m.aier.us>
+ * <wcmaier@openbsd.org>
+
+# Instant Messaging
+
+Jabber/XMPP
+:   <wcmaier@jabber.ccc.de>
+
+AOL
+:   [willmaier](aim:goim?screenname=willmaier)
+
+IRC
+:   [irc://chat.freenode.net/lt_kije](irc://chat.freenode.net/lt_kije,isnick)
+
+# Telephone
+
+SIP/VOIP
+:   [sip:wcmaier@iptel.org]()
