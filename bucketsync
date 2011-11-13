@@ -25,8 +25,8 @@ def main():
         log.level = max(1, logging.WARNING - (10 * (opts.verbose - opts.quiet)))
         log.addHandler(logging.StreamHandler())
 
-    paths = (os.path.normpath(p.rstrip("\n")) for p in sys.stdin)
     bucketname = args[0]
+    paths = (os.path.normpath(p.rstrip("\n")) for p in args[1:])
 
     log.debug("connecting to S3")
     conn = S3Connection()
