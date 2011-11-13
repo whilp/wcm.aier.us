@@ -1,7 +1,7 @@
-BIN =		bin
+SYNC =		bin/bucketsync m.aier.us
 TEMPLATES =	templates
 
-INPUTS !=	hg locate "set:!(Makefile|bin|fonts/**|${TEMPLATES}/**)"
+INPUTS !=	hg locate "set:!(Makefile|${TEMPLATES}/**)"
 BUILT =		${INPUTS:M*.txt:%.txt=%.xhtml}
 
 OUTPUTS =	${INPUTS} ${BUILT}
@@ -25,7 +25,7 @@ clean:
 build: ${BUILT}
 
 deploy: build
-	echo ${OUTPUTS} | xargs -P4 ${BIN}/bucketsync
+	echo ${OUTPUTS} | xargs -P4 ${SYNC}
 
 .txt.xhtml: Makefile ${TEMPLATES}/template.xhtml
 	${PANDOC}
