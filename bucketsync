@@ -1,14 +1,25 @@
 #!/usr/bin/env python
 
+import logging
 import os
 import sys
 
 from boto.s3.connection import S3Connection
 
+try:
+    NullHandler = logging.NullHandler
+except AttributeError:
+    class NullHandler(logging.Handler):
+        def emit(self, record): pass
+
+log = logging.getLogger(__name__)
+log.addHandler(NullHandler())
+
 def main():
     paths = (os.path.normpath(p.rstrip("\n")) for p in sys.stdin)
     bucketname = sys.argv[1]
 
+    log.debug("connecting to S3")
     conn = S3Connection()
     bucket = conn.get_bucket(bucketname)
 
@@ -16,23 +27,29 @@ def main():
 
 def bucketsync(bucket, paths, delete=True):
     keys = dict((k.name, k) for k in bucket.list())
+    log.debug("found %d active keys in bucket %r", len(keys), bucket.name)
+
     for path in paths:
         key = keys.pop(path, None)
         if not key:
+            log.debug("creating key %r", path)
             key = bucket.new_key(path)
 
         md5 = None
         if key.md5:
             md5 = key.compute_md5(path)
             if key.md5 == md5[0]:
+                log.debug("key %r is unchanged", path)
                 # Local and S3 copies match.
                 continue
+        log.debug("uploading key %r", path)
         key.set_contents_from_filename(path, md5=md5)
         key.make_public()
 
     if delete:
         # Any leftover keys have been removed locally and should be deleted from S3.
         for key in keys.values():
+            log.debug("deleting key %r", path)
             key.delete()
 
 if __name__ == "__main__":
