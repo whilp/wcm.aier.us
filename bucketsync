@@ -4,6 +4,8 @@ import logging
 import os
 import sys
 
+from optparse import OptionParser, make_option as Option
+
 from boto.s3.connection import S3Connection
 
 try:
@@ -16,14 +18,31 @@ log = logging.getLogger(__name__)
 log.addHandler(NullHandler())
 
 def main():
+    optparser = OptionParser(option_list=options)
+    (opts, args) = optparser.parse_args()
+
+    if not opts.silent:
+        log.level = max(1, logging.WARNING - (10 * (opts.verbose - opts.quiet)))
+        log.addHandler(logging.StreamHandler())
+
     paths = (os.path.normpath(p.rstrip("\n")) for p in sys.stdin)
-    bucketname = sys.argv[1]
+    bucketname = args[0]
 
     log.debug("connecting to S3")
     conn = S3Connection()
+    log.debug("getting bucket %r", bucketname)
     bucket = conn.get_bucket(bucketname)
 
     bucketsync(bucket, paths)
+
+options = [
+    Option("-q", "--quiet", default=0, action="count",
+        help="decrease logging"),
+    Option("-s", "--silent", default=False, action="store_true",
+        help="silence logging"),
+    Option("-v", "--verbose", default=0, action="count",
+        help="increase logging"),
+]
 
 def bucketsync(bucket, paths, delete=True):
     keys = dict((k.name, k) for k in bucket.list())
