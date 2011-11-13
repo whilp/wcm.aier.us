@@ -7,6 +7,7 @@ BUILT =		${INPUTS:M*.txt:%.txt=%.xhtml}
 OUTPUTS =	${INPUTS} ${BUILT}
 
 PANDOC =	pandoc \
+			--template=${TEMPLATES}/template.xhtml \
 			--standalone \
 			--smart \
 			-f markdown \
@@ -25,5 +26,5 @@ build: ${BUILT}
 deploy: build
 	echo ${OUTPUTS} | xargs -P4 ${BIN}/bucketsync
 
-.txt.xhtml: Makefile
+.txt.xhtml: Makefile ${TEMPLATES}/template.xhtml
 	${PANDOC}
