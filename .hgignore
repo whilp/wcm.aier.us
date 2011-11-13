@@ -1,2 +1,2 @@
 ^setup.sh$
-\.xhtml$
+\.(pdf|xhtml)$
