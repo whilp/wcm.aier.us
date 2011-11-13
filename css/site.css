@@ -8,5 +8,8 @@ dl {
 
 dt {
 	float: left;
-	width: 6em;
+}
+
+dd {
+	margin-left: 6em;
 }
