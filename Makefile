@@ -7,6 +7,7 @@ BUILT =		${INPUTS:M*.txt:%.txt=%.xhtml}
 OUTPUTS =	${INPUTS} ${BUILT}
 
 PANDOC =	pandoc \
+			--email-obfuscation=none \
 			--template=${TEMPLATES}/template.xhtml \
 			--standalone \
 			--smart \
