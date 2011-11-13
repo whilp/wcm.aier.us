@@ -1,10 +1,11 @@
-SYNC =		bin/bucketsync -vv m.aier.us
+BUCKET =	m.aier.us
+SYNC =		bin/bucketsync -vv ${BUCKET}
+TEMPLATES =	templates
 
 INPUTS !=	hg locate "set:!(Makefile|bin/**|.*|${TEMPLATES}/**)"
 BUILT =		${INPUTS:M*.txt:%.txt=%.xhtml}
 OUTPUTS =	${INPUTS} ${BUILT}
 
-TEMPLATES =	templates
 PANDOC =	pandoc \
 			--email-obfuscation=none \
 			--template=${TEMPLATES}/template.xhtml \
