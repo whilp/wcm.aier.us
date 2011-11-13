@@ -76,7 +76,7 @@ def synckey(key, fp, public=True, **kwargs):
             # Local and S3 copies match.
             return
 
-    log.debug("uploading key %r", name)
+    log.info("uploading key %r", name)
     key.set_contents_from_file(fp, md5=md5)
     if public:
         log.debug("making key %r public", name)
