@@ -68,17 +68,17 @@ def synckey(key, fp, public=True, **kwargs):
     md5 = None
     if key.etag:
         etag = key.etag.strip("\"'")
-        (md5, base64md5) = key.compute_md5(fp)
-        if etag != md5:
+        md5 = (md5sum, base64md5) = key.compute_md5(fp)
+        if etag != md5sum:
             log.debug("key %r: local md5sum %s does not match remote etag %s",
-                    name, md5, etag)
+                    name, md5sum, etag)
         else:
             log.debug("key %r is unchanged", name)
             # Local and S3 copies match.
             return
 
     log.debug("uploading key %r", name)
-    key.set_contents_from_file(fp, md5=(md5, base64md5))
+    key.set_contents_from_file(fp, md5=md5)
     if public:
         log.debug("making key %r public", name)
         key.make_public()
