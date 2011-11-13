@@ -1,4 +1,4 @@
-SYNC =		bin/bucketsync m.aier.us
+SYNC =		bin/bucketsync -vv m.aier.us
 TEMPLATES =	templates
 
 INPUTS !=	hg locate "set:!(Makefile|${TEMPLATES}/**)"
