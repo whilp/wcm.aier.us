@@ -60,7 +60,7 @@ def bucketsync(bucket, paths, delete=True):
     if delete:
         # Any leftover keys have been removed locally and should be deleted from S3.
         for key in keys.values():
-            log.debug("deleting key %r", path)
+            log.debug("deleting key %r", key)
             key.delete()
 
 def synckey(key, fp, public=True, **kwargs):
