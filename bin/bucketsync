@@ -70,8 +70,7 @@ def synckey(key, fp, public=True, **kwargs):
         etag = key.etag.strip("\"'")
         md5 = (md5sum, base64md5) = key.compute_md5(fp)
         if etag != md5sum:
-            log.debug("key %r: local md5sum %s does not match remote etag %s",
-                    name, md5sum, etag)
+            log.debug("MD5(%r)=%s does not match remote etag %s", name, md5sum, etag)
         else:
             log.debug("key %r is unchanged", name)
             # Local and S3 copies match.
