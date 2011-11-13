@@ -35,22 +35,34 @@ def bucketsync(bucket, paths, delete=True):
             log.debug("creating key %r", path)
             key = bucket.new_key(path)
 
-        md5 = None
-        if key.md5:
-            md5 = key.compute_md5(path)
-            if key.md5 == md5[0]:
-                log.debug("key %r is unchanged", path)
-                # Local and S3 copies match.
-                continue
-        log.debug("uploading key %r", path)
-        key.set_contents_from_filename(path, md5=md5)
-        key.make_public()
+        with open(path, 'rb') as fp:
+            synckey(key, fp)
 
     if delete:
         # Any leftover keys have been removed locally and should be deleted from S3.
         for key in keys.values():
             log.debug("deleting key %r", path)
             key.delete()
+
+def synckey(key, fp, public=True, **kwargs):
+    name = key.name
+    md5 = None
+    if key.etag:
+        etag = key.etag.strip("\"'")
+        (md5, base64md5) = key.compute_md5(fp)
+        if etag != md5:
+            log.debug("key %r: local md5sum %s does not match remote etag %s",
+                    name, md5, etag)
+        else:
+            log.debug("key %r is unchanged", name)
+            # Local and S3 copies match.
+            return
+
+    log.debug("uploading key %r", name)
+    key.set_contents_from_file(fp, md5=(md5, base64md5))
+    if public:
+        log.debug("making key %r public", name)
+        key.make_public()
 
 if __name__ == "__main__":
     try:
