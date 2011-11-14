@@ -76,11 +76,23 @@ def synckey(key, fp, public=True, **kwargs):
             # Local and S3 copies match.
             return
 
+    headers = None
+    contenttype = magic(fp)
+    if contenttype is not None:
+	log.debug("guessed magic Content-Type %r for key %r", contenttype, name)
+    	headers = {"Content-Type": contenttype}
     log.info("uploading key %r", name)
-    key.set_contents_from_file(fp, md5=md5)
+    key.set_contents_from_file(fp, headers=headers, md5=md5)
     if public:
         log.debug("making key %r public", name)
         key.make_public()
+
+def magic(fp):
+    fp.seek(0)
+    chunk = fp.read(1024)
+    fp.seek(0)
+    if "<html" in chunk and "xmlns=" in chunk:
+    	return "application/xhtml+xml"
 
 if __name__ == "__main__":
     try:
