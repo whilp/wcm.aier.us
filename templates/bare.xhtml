@@ -25,32 +25,6 @@ $for(header-includes)$
 $endfor$
 </head>
 <body class="wrapper">
-<article>
-$if(title)$
-<header class="header">
-<h1 class="title">$title$</h1>
-$for(author)$
-<h3 class="author">$author$</h3>
-$endfor$
-$if(date)$
-<h4 class="date">$date$</h4>
-$endif$
-$if(toc)$
-<nav class="toc">
-$toc$
-</nav>
-$endif$
-</header>
-$endif$
-<div class="wrapper content">
 $body$
-</div>
-</article>
-<nav class="wrapper">
-<ul>
-<li><a href="/">will.m.aier.us</a></li>
-<li><a href="/copyright">copyright</a></li>
-</ul>
-</nav>
 </body>
 </html>
