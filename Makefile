@@ -11,8 +11,6 @@ PANDOC =	pandoc \
 			--standalone \
 			--smart \
 			-f markdown \
-			--include-before=${TEMPLATES}/head.xhtml \
-			--include-after=${TEMPLATES}/foot.xhtml \
 			--html5 -t html --section-divs \
 			-c /css/site.css
 
