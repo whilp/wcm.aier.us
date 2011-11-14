@@ -2,7 +2,7 @@
 
 I'm Will Maier; here's how you can reach me.
 
-# Web
+## Web
 
  * [http://will.m.aier.us/]()
  * [http://twitter.com/wcmaier]()
@@ -10,13 +10,13 @@ I'm Will Maier; here's how you can reach me.
  * [http://bitbucket.org/wcmaier]()
  * [http://hep.wisc.edu/~wcmaier]()
 
-# Email
+## Email
 
  * <willmaier@ml1.net>
  * <will@m.aier.us>
  * <wcmaier@openbsd.org>
 
-# Instant Messaging
+## Instant Messaging
 
 Jabber/XMPP
 :   <wcmaier@jabber.ccc.de>
@@ -27,7 +27,7 @@ AOL
 IRC
 :   [irc://chat.freenode.net/lt_kije](irc://chat.freenode.net/lt_kije,isnick)
 
-# Telephone
+## Telephone
 
 SIP/VOIP
 :   [sip:wcmaier@iptel.org]()

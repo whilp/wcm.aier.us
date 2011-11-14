@@ -1,6 +1,6 @@
 % William C. Maier
 
-# Contact
+## Contact
 
 address
 :   1235 Chandler St  
@@ -14,16 +14,16 @@ email
 mobile
 :   +1 608 438 6162
 
-# Summary
+## Summary
 
 I'm fascinated by big data in science and on the web.
 These huge new datasets present some of today's most exciting challenges, and open source software has given me the tools to help tackle them.
 I believe that open standards and free software can not only measure new particles or reveal social networks — I believe we can use them to save the world, and I want to help.
 
-# Experience
+## Experience
 
-## Systems Programmer 
-### University of Wisconsin CMS Tier 2 Center (2006–)
+### Systems Programmer 
+#### University of Wisconsin CMS Tier 2 Center (2006–)
 
  * Led operations of the University's NSF- and DOE-supported LHC physics
   analysis center.
@@ -34,51 +34,51 @@ I believe that open standards and free software can not only measure new particl
  * Analyzed security breaches and developed proactive measures to increase site and user security.
 
 
-## Student systems administrator
-### University of Wisconsin High Energy Physics (2005–2006)
+### Student systems administrator
+#### University of Wisconsin High Energy Physics (2005–2006)
 
  * Developed a custom request tracking system in Python based on Roundup.
  * Deployed fiber-optic network connections, supporting sustained data transfer rates of more than 10 gigabits per second.
  * Developed and configured custom Nagios and Ganglia probes to monitor grid and infrastructure services.
 
-## Student systems administrator
-### University of Wisconsin College of Engineering (2005–2006)
+### Student systems administrator
+#### University of Wisconsin College of Engineering (2005–2006)
 
  * Installed and maintained a large, OpenAFS-based software repository including open source and commercial software.
  * Maintained and improved the Center's request tracker, written in Perl.
  * Supported college-wide mail, webmail, DNS and Apache virtual hosts in addition to large Linux and Solaris desktop labs.
 
 
-## Student software trainer
-### University of Wisconsin Division of Information Technology (2005–2006)
+### Student software trainer
+#### University of Wisconsin Division of Information Technology (2005–2006)
 
  * Wrote new curriculum to teach Unix fundamentals to university students.
 
 
-## Student network administrator
-### Central Properties, Madison, WI (2004–2005)
+### Student network administrator
+#### Central Properties, Madison, WI (2004–2005)
 
  * Installed custom security monitoring tools for a large residential network.
 
-# Education
+## Education
 
-## University of Wisconsin (2002–2006)
+### University of Wisconsin (2002–2006)
 
  * BA, History of Science, 3.6 GPA (Fall 2006); Dean's list (Fall 2003).
  * Advanced study of German.
 
 
-## University of Wisconsin – Milwaukee (2001–2002)
+### University of Wisconsin – Milwaukee (2001–2002)
 
  * Studied German at university during senior year of high school.
 
-# Talks and publications
+## Talks and publications
 
  * *Storage at UW-Madison CMS Tier-2*, Open Science Grid Storage Forum (2009, 2010).
  * *Grid computing panel*, Condor Week, University of Wisconsin (2009).
  * *dCache Performance and Management*, USCMS Tier 2 Computing Workshop, UCSD (2007).
 
-# Contributions and Memberships
+## Contributions and Memberships
 
  * OpenBSD developer (2008–).
  * Madison Linux Users Group member (2002–).
@@ -87,7 +87,7 @@ I believe that open standards and free software can not only measure new particl
  * Developer of open source projects including cli, tsar, dcache-tools and ptemplate.
  * Contributor to open source projects including Mercurial, Sphinx and tmux.
 
-# Interests
+## Interests
 
  * Operating systems (BSD, Linux).
  * Programming (Python, shell).
