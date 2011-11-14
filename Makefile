@@ -3,7 +3,7 @@ SYNC =		bin/bucketsync -v ${BUCKET}
 TEMPLATES =	templates
 
 INPUTS !=	hg locate "set:!(Makefile|bin/**|.*|${TEMPLATES}/**)"
-BUILT =		${INPUTS:M*.txt:%.txt=%.xhtml} cv.pdf
+BUILT =		${INPUTS:M*.txt:%.txt=%} cv.pdf
 OUTPUTS =	${INPUTS} ${BUILT}
 
 PANDOC =	pandoc \
@@ -16,7 +16,7 @@ PANDOC =	pandoc \
 			-c /css/site.css \
 			-o $@ $<
 
-.SUFFIXES: .txt .xhtml .pdf
+.SUFFIXES: .txt .pdf
 
 default: build
 
@@ -28,7 +28,7 @@ build: ${BUILT}
 deploy: build
 	echo ${OUTPUTS} | xargs -P4 ${SYNC}
 
-.txt.xhtml: Makefile ${TEMPLATES}/template.xhtml
+.txt:
 	${PANDOC}
 
 .txt.pdf:
