@@ -1,0 +1,14 @@
+% Will Maier
+
+<div class="linkweb">
+ * twitter.com
+ * github.com
+<div class="left">
+</div>
+<div class="center">
+/wcmaier@
+</div>
+<div class="right">
+ * hep.wisc.edu
+ * openbsd.org
+</div>
