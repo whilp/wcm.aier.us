@@ -1,14 +1,16 @@
-% Will Maier
+# wcmaier
 
-<div class="linkweb">
- * twitter.com
- * github.com
-<div class="left">
-</div>
-<div class="center">
-/wcmaier@
-</div>
-<div class="right">
- * hep.wisc.edu
- * openbsd.org
-</div>
+## Site Links
+
+ * [CV](/cv)
+ * [copyright](/copyright)
+
+## Mail Links
+
+ * [hep.wisc.edu](mailto:wcmaier@hep.wisc.edu)
+ * [openbsd.org](mailto:wcmaier@openbsd.org)
+
+## Web Links
+ 
+ * [twitter.com](http://twitter.com/wcmaier)
+ * [github.com](http://github.com/wcmaier)

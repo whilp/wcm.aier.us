@@ -8,13 +8,13 @@ OUTPUTS =	${INPUTS} ${BUILT}
 
 PANDOC =	pandoc \
 			--email-obfuscation=none \
-			--template=${TEMPLATES}/template.xhtml \
 			--standalone \
 			--smart \
 			-f markdown \
+			--include-before=${TEMPLATES}/head.xhtml \
+			--include-after=${TEMPLATES}/foot.xhtml \
 			--html5 -t html --section-divs \
-			-c /css/site.css \
-			-o
+			-c /css/site.css
 
 .SUFFIXES: .txt .pdf
 
@@ -29,10 +29,10 @@ deploy: build
 	echo ${OUTPUTS} | xargs -P4 ${SYNC}
 
 index: index.txt
-	${PANDOC} -Vbase=true -o $@ $<
+	${PANDOC} --template=${TEMPLATES}/bare.xhtml -o $@ $<
 
 .txt:
-	${PANDOC} -o $@ $<
+	${PANDOC} --template=${TEMPLATES}/base.xhtml -o $@ $<
 
 .txt.pdf:
 	markdown2pdf $<
