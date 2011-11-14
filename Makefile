@@ -28,6 +28,9 @@ build: ${BUILT}
 deploy: build
 	echo ${OUTPUTS} | xargs -P4 ${SYNC}
 
+index: index.txt
+	${PANDOC} -Vbase=true -o $@ $<
+
 .txt:
 	${PANDOC} -o $@ $<
 

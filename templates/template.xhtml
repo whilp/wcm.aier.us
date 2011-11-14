@@ -27,6 +27,9 @@ $endfor$
 
 <body class="wrapper">
 
+$if(base)$
+$body$
+$else$
 <article>
 $if(title)$
 <header class="header">
@@ -59,6 +62,7 @@ $body$
 <li><a href="/contact.xhtml">contact</a></li>
 </ul>
 </nav>
+$endif$
 
 </body>
 </html>
