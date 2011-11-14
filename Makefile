@@ -14,7 +14,7 @@ PANDOC =	pandoc \
 			-f markdown \
 			--html5 -t html --section-divs \
 			-c /css/site.css \
-			-o $@ $<
+			-o
 
 .SUFFIXES: .txt .pdf
 
@@ -29,7 +29,7 @@ deploy: build
 	echo ${OUTPUTS} | xargs -P4 ${SYNC}
 
 .txt:
-	${PANDOC}
+	${PANDOC} -o $@ $<
 
 .txt.pdf:
 	markdown2pdf $<
