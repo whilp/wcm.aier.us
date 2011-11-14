@@ -1,10 +1,5 @@
 # wcmaier
 
-## Site Links
-
- * [CV](/cv)
- * [copyright](/copyright)
-
 ## Mail Links
 
  * [hep.wisc.edu](mailto:wcmaier@hep.wisc.edu)
@@ -14,3 +9,8 @@
  
  * [twitter.com](http://twitter.com/wcmaier)
  * [github.com](http://github.com/wcmaier)
+
+## Site Links
+
+ * [CV](/cv)
+ * [copyright](/copyright)
