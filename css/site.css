@@ -1,6 +1,15 @@
-@import "base.css";
-@import "skeleton.css";
-@import "layout.css";
+@import "GGS.css";
+
+.header {
+    width: 100%;
+    margin: 0 0;
+}
+
+.content {
+}
+
+.sidebar {
+}
 
 dl {
 	clear: both;
@@ -11,5 +20,5 @@ dt {
 }
 
 dd {
-	margin-left: 8em;
+	margin-left: 25%;
 }

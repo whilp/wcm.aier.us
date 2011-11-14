@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
 $for(author)$
   <meta name="author" content="$author$" />
 $endfor$
@@ -24,10 +24,12 @@ $for(header-includes)$
   $header-includes$
 $endfor$
 </head>
-<body class="container">
+
+<body class="wrapper">
+
 <article>
 $if(title)$
-<header class="sixteen columns header">
+<header class="header">
 <h1 class="title">$title$</h1>
 $for(author)$
 <h3 class="author">$author$</h3>
@@ -37,21 +39,26 @@ $if(date)$
 $endif$
 </header>
 $endif$
+
 $if(toc)$
 <nav id="$idprefix$TOC">
 $toc$
 </nav>
 $endif$
-<div class="eleven columns content">
+
+<div class="wrapper content">
 $body$
 </div>
+
 </article>
-<nav class="four columns offset-by-one sidebar">
+
+<nav class="wrapper sidebar">
 <ul>
 <li><a href="/">will.m.aier.us</a></li>
 <li><a href="/copyright.xhtml">copyright</a></li>
 <li><a href="/contact.xhtml">contact</a></li>
 </ul>
 </nav>
+
 </body>
 </html>
