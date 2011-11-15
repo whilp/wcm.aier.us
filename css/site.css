@@ -89,6 +89,10 @@ nav.footer a {
     text-decoration: none;
 }
 
+nav.footer a:hover {
+    text-decoration: underline;
+}
+
 #wcmaier {
     font-size: 2em;
 }
@@ -103,6 +107,10 @@ nav.footer a {
     font-size: .5em;
     width: 50%;
     margin-left: 25%;
+}
+
+#site-links a:hover {
+    text-decoration: underline;
 }
 
 #wcmaier #site-links ul li {
