@@ -46,6 +46,7 @@ pre {
     border-width: 0 0 0 1px;
     overflow-x: auto;
     margin-top: 1em;
+    white-space: pre;
 }
 
 ul {
