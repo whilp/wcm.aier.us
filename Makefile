@@ -2,7 +2,7 @@ BUCKET =	m.aier.us
 SYNC =		bin/bucketsync -v ${BUCKET}
 TEMPLATES =	templates
 
-INPUTS !=	hg locate "set:!(Makefile|README|bin/**|.*|${TEMPLATES}/**)"
+INPUTS !=	hg locate "set:!(Makefile|TODO|README|bin/**|.*|${TEMPLATES}/**)"
 CSS =		${INPUTS:M*.css}
 MINCSS =	css/site.min.css
 BUILT =		${INPUTS:M*.txt:%.txt=%} cv.pdf ${MINCSS}

@@ -1,0 +1,4 @@
+ * https://developers.google.com/pagespeed
+ * http://www.webpagetest.org
+ * Use Content-Type: ...; charset=UTF-8 for text/XHTML (in bin/bucketsync).
+ * Cache-Control: max-age
