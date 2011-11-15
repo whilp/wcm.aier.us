@@ -2,7 +2,7 @@ BUCKET =	m.aier.us
 SYNC =		bin/bucketsync -v ${BUCKET}
 TEMPLATES =	templates
 
-INPUTS !=	hg locate "set:!(Makefile|bin/**|.*|${TEMPLATES}/**)"
+INPUTS !=	hg locate "set:!(Makefile|README|bin/**|.*|${TEMPLATES}/**)"
 BUILT =		${INPUTS:M*.txt:%.txt=%} cv.pdf
 OUTPUTS =	${INPUTS} ${BUILT}
 
