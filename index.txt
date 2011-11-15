@@ -13,5 +13,5 @@
 ## Site Links
 
  * [CV](/cv)
- * [copyright](/copyright)
  * [colophon](/colophon)
+ * [copyright](/copyright)
