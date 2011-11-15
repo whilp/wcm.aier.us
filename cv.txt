@@ -7,7 +7,7 @@ address
     Madison, WI 53715 USA  
     (43.073338;-89.405071)
 www
-:   <http://will.m.aier.us/>
+:   <http://wcm.aier.us/>
 :   <http://github.com/wcmaier>
 email
 :   <will@m.aier.us>
@@ -115,4 +115,4 @@ I believe that open standards and free software can not only measure new particl
  * Cycling, cooking, coffee, cats, electronic music.
 
 References available upon request.
-An HTML version of this document is available on the web ([http://will.m.aier.us/cv](/cv)); a PDF version is also available ([http://will.m.aier.us/cv.pdf](/cv.pdf)).
+An HTML version of this document is available on the web ([http://wcm.aier.us/cv](/cv)); a PDF version is also available ([http://wcm.aier.us/cv.pdf](/cv.pdf)).
