@@ -1,14 +1,14 @@
 # wcmaier
 
-## Mail Links
-
- * [hep.wisc.edu](mailto:wcmaier@hep.wisc.edu)
- * [openbsd.org](mailto:wcmaier@openbsd.org)
-
 ## Web Links
  
- * [twitter.com](http://twitter.com/wcmaier)
- * [github.com](http://github.com/wcmaier)
+ * [twitter.com/](http://twitter.com/wcmaier)
+ * [github.com/](http://github.com/wcmaier)
+
+## Mail Links
+
+ * [@hep.wisc.edu](mailto:wcmaier@hep.wisc.edu)
+ * [@openbsd.org](mailto:wcmaier@openbsd.org)
 
 ## Site Links
 

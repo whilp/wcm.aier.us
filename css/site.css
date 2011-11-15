@@ -104,6 +104,9 @@ nav.footer a:hover {
 
 #wcmaier {
     font-size: 2em;
+    width: 20em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #wcmaier h1,
@@ -114,75 +117,71 @@ nav.footer a:hover {
 #site-links {
     clear: both;
     font-size: .5em;
-    width: 50%;
-    margin-left: 25%;
+    margin: 1em;
 }
 
 #site-links a:hover {
     text-decoration: underline;
 }
 
-#wcmaier #site-links ul li {
+#wcmaier #site-links li {
     display: inline;
-}
-
-#mail-links {
-    text-align: right;
-}
-
-#mail-links ul {
-}
-
-#web-links {
-    text-align: left;
-}
-
-#web-links ul {
+    padding: .3em;
 }
 
 #mail-links,
 #web-links {
-    width: 50%;
-    float: left;
-    padding-bottom: .3em;
+    width: 100%;
 }
 
-#mail-links a,
+#web-links {
+    text-align: right;
+}
+
+#mail-links {
+    text-align: left;
+}
+
 #web-links a {
-    display: block;
+    margin-right: 8.42em;
+}
+
+#mail-links a {
+    margin-left: 7.2em;
 }
 
 #wcmaier h2 {
     display: none;
 }
 
-#wcmaier ul { 
-    margin: .5em 0 0 0;
+#wcmaier ul,
+#wcmaier li { 
+    margin: 0;
+}
+
+#wcmaier li {
+    padding: .2em;
 }
 
 #wcmaier a {
     text-decoration: inherit;
     color: inherit;
-    padding: .2em;
-}
-
-#wcmaier a:hover {
 }
 
 #wcmaier a:before,
 #wcmaier a:after {
+    color: #fff;
+}
+
+#wcmaier a:hover:before,
+#wcmaier a:hover:after {
     color: #999;
 }
 
-#wcmaier a:before:hover,
-#wcmaier a:after:hover {
-    color: #999;
+#mail-links a:before,
+#web-links a:after {
+    content: 'wcmaier';
 }
-
-#mail-links a:before {          content: "@"; }
-#mail-links a:hover:before {    content: "wcmaier@"; }
-#web-links a:after {            content: "/"; }
-#web-links a:hover:after {      content: "/wcmaier"; }
 
 /* CV */
 
