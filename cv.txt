@@ -23,37 +23,42 @@ I believe that open standards and free software can not only measure new particl
 ## Experience
 
 ### Systems Programmer 
-#### University of Wisconsin CMS Tier 2 Center (2006–)
+#### [University of Wisconsin][] [CMS Tier 2 Center] (2006–)
 
- * Led operations of the University's NSF- and DOE-supported LHC physics
-  analysis center.
+ * Led operations of the University's NSF- and DOE-supported LHC physics analysis center.
  * Grew Linux cluster from 200 to 2300 cores for analysis and from 100 terabytes to 1.2 petabytes for distributed data storage.
  * Developed custom software in Python to monitor cluster performance.
  * Led transition from Cfengine to Puppet to improve cluster management.
  * Optimized performance of critical PostgreSQL database servers.
  * Analyzed security breaches and developed proactive measures to increase site and user security.
 
+[University of Wisconsin]:  http://wisc.edu/
+[CMS Tier 2 Center]:        http://hep.wisc.edu/cms/comp
 
 ### Student systems administrator
-#### University of Wisconsin High Energy Physics (2005–2006)
+#### University of Wisconsin [High Energy Physics] (2005–2006)
 
  * Developed a custom request tracking system in Python based on Roundup.
  * Deployed fiber-optic network connections, supporting sustained data transfer rates of more than 10 gigabits per second.
  * Developed and configured custom Nagios and Ganglia probes to monitor grid and infrastructure services.
 
+[High Energy Physics]:      http://hep.wisc.edu/
+
 ### Student systems administrator
-#### University of Wisconsin College of Engineering (2005–2006)
+#### University of Wisconsin [College of Engineering] (2005–2006)
 
  * Installed and maintained a large, OpenAFS-based software repository including open source and commercial software.
  * Maintained and improved the Center's request tracker, written in Perl.
  * Supported college-wide mail, webmail, DNS and Apache virtual hosts in addition to large Linux and Solaris desktop labs.
 
+[College of Engineering]:   http://cae.wisc.edu/
 
 ### Student software trainer
-#### University of Wisconsin Division of Information Technology (2005–2006)
+#### University of Wisconsin [Division of Information Technology] (2005–2006)
 
  * Wrote new curriculum to teach Unix fundamentals to university students.
 
+[Division of Information Technology]:   http://www.doit.wisc.edu/training/student/
 
 ### Student network administrator
 #### Central Properties, Madison, WI (2004–2005)
@@ -64,13 +69,17 @@ I believe that open standards and free software can not only measure new particl
 
 ### University of Wisconsin (2002–2006)
 
- * BA, History of Science, 3.6 GPA (Fall 2006); Dean's list (Fall 2003).
- * Advanced study of German.
+ * BA, [History of Science], 3.6 GPA (Fall 2006); Dean's list (Fall 2003).
+ * Advanced study of [German].
 
+[History of Science]:   http://histsci.wisc.edu/
+[German]:               http://german.lss.wisc.edu/new_web/
 
-### University of Wisconsin – Milwaukee (2001–2002)
+### [University of Wisconsin – Milwaukee] (2001–2002)
 
  * Studied German at university during senior year of high school.
+
+[University of Wisconsin – Milwaukee]:  http://www4.uwm.edu/letsci/fll/undergrad/german.cfm
 
 ## Talks and publications
 
@@ -80,19 +89,29 @@ I believe that open standards and free software can not only measure new particl
 
 ## Contributions and Memberships
 
- * OpenBSD developer (2008–).
- * Madison Linux Users Group member (2002–).
- * Social Justice Center board of directors, secretary (2004–2005).
- * Madison Community Cooperative board of directors, member (2004–2005).
- * Developer of open source projects including cli, tsar, dcache-tools and ptemplate.
- * Contributor to open source projects including Mercurial, Sphinx and tmux.
+ * [OpenBSD] developer (2008–).
+ * [Madison Linux Users Group] member (2002–).
+ * [Social Justice Center] board of directors, secretary (2004–2005).
+ * [Madison Community Cooperative] board of directors, member (2004–2005).
+ * Developer of open source projects including [cli] and [ptemplate].
+ * Contributor to open source projects including [Mercurial], [Sphinx] and [tmux].
+
+[OpenBSD]:                      http://openbsd.org/
+[Madison Linux Users Group]:    http://madisonlinux.org/
+[Social Justice Center]:        http://socialjusticecenter.org/
+[Madison Community Cooperative]: http://madisoncommunity.coop/
+[cli]:                          http://packages.python.org/pyCLI/
+[ptemplate]:                    http://packages.python.org/ptemplate/
+[Mercurial]:                    http://selenic.com/mercurial
+[Sphinx]:                       http://sphinx.pocoo.org/
+[tmux]:                         http://tmux.sf.net/
 
 ## Interests
 
- * Operating systems (BSD, Linux).
- * Programming (Python, shell).
  * Distributed computing (Condor, dCache, HDFS).
+ * Programming (Python, shell).
  * Performance and reliability monitoring (Ganglia, Nagios).
+ * Operating systems (BSD, Linux).
  * Cycling, cooking, coffee, cats, electronic music.
 
 References available upon request.
