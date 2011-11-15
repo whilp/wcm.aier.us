@@ -181,3 +181,16 @@ nav.footer a:hover {
 #mail-links a:hover:before {    content: "wcmaier@"; }
 #web-links a:after {            content: "/"; }
 #web-links a:hover:after {      content: "/wcmaier"; }
+
+/* CV */
+
+#contact a,
+#summary a,
+#experience a,
+#education a,
+#talks-and-publications a,
+#contributions-and-memberships a,
+#interests a {
+    text-decoration: none ! important;
+    color: inherit ! important;
+}
