@@ -14,3 +14,4 @@
 
  * [CV](/cv)
  * [copyright](/copyright)
+ * [colophon](/colophon)
