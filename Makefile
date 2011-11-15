@@ -3,7 +3,9 @@ SYNC =		bin/bucketsync -v ${BUCKET}
 TEMPLATES =	templates
 
 INPUTS !=	hg locate "set:!(Makefile|README|bin/**|.*|${TEMPLATES}/**)"
-BUILT =		${INPUTS:M*.txt:%.txt=%} cv.pdf
+CSS =		${INPUTS:M*.css}
+MINCSS =	css/site.min.css
+BUILT =		${INPUTS:M*.txt:%.txt=%} cv.pdf ${MINCSS}
 OUTPUTS =	${INPUTS} ${BUILT}
 
 PANDOC =	pandoc \
@@ -28,6 +30,9 @@ deploy: build
 
 index: index.txt
 	${PANDOC} --template=${TEMPLATES}/bare.xhtml -o $@ $<
+
+${MINCSS}: ${CSS}
+	cat $? | cssmin > ${MINCSS}
 
 .txt:
 	${PANDOC} --template=${TEMPLATES}/base.xhtml -o $@ $<
