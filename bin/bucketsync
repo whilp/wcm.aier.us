@@ -33,9 +33,11 @@ def main():
     log.debug("getting bucket %r", bucketname)
     bucket = conn.get_bucket(bucketname)
 
-    bucketsync(bucket, paths)
+    bucketsync(bucket, paths, delete=opts.delete)
 
 options = [
+    Option("-d", "--delete", default=False, action="store_true",
+        help="delete keys in the bucket that are not present in argv"),
     Option("-q", "--quiet", default=0, action="count",
         help="decrease logging"),
     Option("-s", "--silent", default=False, action="store_true",
