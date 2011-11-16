@@ -2,3 +2,8 @@ To deploy to S3, export the following environment variables:
 
     export AWS_ACCESS_KEY_ID=...
     export AWS_SECRET_ACCESS_KEY=...
+
+Relevant domain names:
+
+    S3:         m.aier.us.s3-website-us-east-1.amazonaws.com
+    Cloudfront: d2jhgf5m3vfs2o.cloudfront.net
