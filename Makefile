@@ -32,7 +32,7 @@ index: index.txt
 	${PANDOC} --template=${TEMPLATES}/bare.xhtml -o $@ $<
 
 ${MINCSS}: ${CSS}
-	cat $? | cssmin > ${MINCSS}
+	cat ${CSS} | cssmin > ${MINCSS}
 
 .txt:
 	${PANDOC} --template=${TEMPLATES}/base.xhtml -o $@ $<
