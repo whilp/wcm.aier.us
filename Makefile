@@ -28,6 +28,9 @@ build: ${BUILT}
 deploy: build
 	echo ${OUTPUTS} | xargs -P4 ${SYNC}
 
+clean-remote: build
+	${SYNC} -d ${OUTPUTS}
+
 index: index.txt
 	${PANDOC} --template=${TEMPLATES}/bare.xhtml -o $@ $<
 
