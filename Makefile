@@ -16,7 +16,7 @@ PANDOC =	pandoc \
 			--smart \
 			-f markdown \
 			--html5 -t html --section-divs \
-			-c /css/site.css
+			-c /css/site.min.css
 
 .SUFFIXES: .txt .pdf
 
