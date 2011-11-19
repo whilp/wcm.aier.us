@@ -33,6 +33,9 @@ deploy: build
 clean-remote: build
 	${SYNC} -d ${OUTPUTS}
 
+serve:
+	./bin/serve -v
+
 index: index.txt
 	${PANDOC} --template=${TEMPLATES}/bare.xhtml -o $@ $<
 
