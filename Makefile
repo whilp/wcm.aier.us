@@ -2,11 +2,13 @@ BUCKET =	m.aier.us
 SYNC =		bin/bucketsync -v ${BUCKET}
 TEMPLATES =	templates
 
-INPUTS !=	hg locate "set:!(Makefile|TODO|README|bin/**|.*|${TEMPLATES}/**)"
-CSS =		${INPUTS:M*.css}
+CSS =		css/GGS.css css/font.css css/site.css
+PUBLISHED =	colophon.txt copyright.txt cv.txt index.txt
+DRAFT =		new-tools.txt
 MINCSS =	css/site.min.css
-BUILT =		${INPUTS:M*.txt:%.txt=%} cv.pdf ${MINCSS}
-OUTPUTS =	${INPUTS} ${BUILT}
+PDF =		cv.pdf
+BUILT =		${PUBLISHED:%.txt=%} ${PDF} ${MINCSS}
+OUTPUTS =	${PUBLISHED} ${BUILT}
 
 PANDOC =	pandoc \
 			--email-obfuscation=none \
