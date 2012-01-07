@@ -2,7 +2,7 @@
 
 Unless otherwise indicated, all code and text on this web site is published under the following license (MIT/X11/BSD):
 
-    Copyright (c) 2010 Will Maier <will@m.aier.us>
+    Copyright (c) 2010-2012 Will Maier <will@m.aier.us>
 
     Permission to use, copy, modify, and distribute this software for any
     purpose with or without fee is hereby granted, provided that the above
