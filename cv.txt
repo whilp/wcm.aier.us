@@ -123,7 +123,8 @@ I believe that open standards and free software can not only measure new particl
 
 ## Interests
 
- * Distributed computing (Condor, dCache, HDFS).
+ * Distributed computing (Condor, HDFS).
+ * Operations and configuration management (CFengine, Chef, Puppet).
  * Programming (Python, shell).
  * Performance and reliability monitoring (Ganglia, Nagios).
  * Operating systems (BSD, Linux).
