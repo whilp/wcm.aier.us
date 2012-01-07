@@ -128,7 +128,7 @@ I believe that open standards and free software can not only measure new particl
  * Programming (Python, shell).
  * Performance and reliability monitoring (Ganglia, Nagios).
  * Operating systems (BSD, Linux).
- * Cycling, cooking, coffee, cats, electronic music.
+ * Cycling, cooking, coffee, cats, newspapers, magazines, electronic music.
 
 References available upon request.
 An HTML version of this document is available on the web ([http://wcm.aier.us/cv](/cv)); a PDF version is also available ([http://wcm.aier.us/cv.pdf](/cv.pdf)).
