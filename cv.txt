@@ -27,6 +27,8 @@ I believe that open standards and free software can not only measure new particl
 
  * Led operations of the University's NSF- and DOE-supported LHC physics analysis center.
  * Grew Linux cluster from 200 to 2300 cores for analysis and from 100 terabytes to 1.2 petabytes for distributed data storage.
+ * Migrated 2.2 PB storage cluster to the Hadoop distributed file system with minimal downtime.
+ * Built a Mercurial hosting service and made it the core of code, configuration management and documentation workflows.
 
 ### Associate Systems Programmer 
 #### [University of Wisconsin][] [CMS Tier 2 Center] (2006–2010)
