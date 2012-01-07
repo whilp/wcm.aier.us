@@ -87,9 +87,20 @@ I believe that open standards and free software can not only measure new particl
 
 ## Talks and publications
 
+ * *[A highly distributed, petascale migration from dCache to HDFS][hepix2011]*, HEPiX, Simon Fraser University (2011).
+ * *OpenBSD*, [Barcamp Madison][barcampmsn] (2011).
+ * *[Linux at the LHC][linuxlhc]*, [Madison Linux Users Group][madlug], [Milwaukee Linux Users group][mkelug] (2011).
+ * *[Security best practices][osgahm2011-t3]*, Open Science Grid All Hands Meeting, Harvard Medical School (2011).
  * *Storage at UW-Madison CMS Tier-2*, Open Science Grid Storage Forum (2009, 2010).
  * *Grid computing panel*, Condor Week, University of Wisconsin (2009).
  * *dCache Performance and Management*, USCMS Tier 2 Computing Workshop, UCSD (2007).
+
+[hepix2011]:        https://indico.cern.ch/contributionDisplay.py?sessionId=8&contribId=8&confId=138424
+[barcampmsn]:       http://www.barcampmadison.org/
+[linuxlhc]:         https://github.com/wcmaier/linux-lhc
+[mkelug]:           http://www.milwaukeelug.org/
+[madlug]:           http://madisonlinux.org/Home
+[osgahm2011-t3]:   http://www.hep.wisc.edu/~wcmaier/talks/osgahm-2011-t3sec
 
 ## Contributions and Memberships
 
