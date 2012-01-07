@@ -43,7 +43,7 @@ I believe that open standards and free software can not only measure new particl
 #### University of Wisconsin [High Energy Physics] (2005–2006)
 
  * Developed a custom request tracking system in Python based on Roundup.
- * Deployed fiber-optic network connections, supporting sustained data transfer rates of more than 10 gigabits per second.
+ * Deployed a 10 Gb/s fiber-optic network.
  * Developed and configured custom Nagios and Ganglia probes to monitor grid and infrastructure services.
 
 [High Energy Physics]:      http://hep.wisc.edu/
