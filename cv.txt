@@ -23,12 +23,14 @@ I believe that open standards and free software can not only measure new particl
 ## Experience
 
 ### Systems Programmer 
-#### [University of Wisconsin][] [CMS Tier 2 Center] (2006–)
+#### [University of Wisconsin][] [CMS Tier 2 Center] (2010–)
 
  * Led operations of the University's NSF- and DOE-supported LHC physics analysis center.
  * Grew Linux cluster from 200 to 2300 cores for analysis and from 100 terabytes to 1.2 petabytes for distributed data storage.
+
+### Associate Systems Programmer 
+#### [University of Wisconsin][] [CMS Tier 2 Center] (2006–2010)
  * Developed custom software in Python to monitor cluster performance.
- * Led transition from Cfengine to Puppet to improve cluster management.
  * Optimized performance of critical PostgreSQL database servers.
  * Analyzed security breaches and developed proactive measures to increase site and user security.
 
