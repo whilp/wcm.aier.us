@@ -161,7 +161,7 @@ nav.footer a:hover {
 }
 
 #wcmaier a {
-    text-decoration: inherit;
+    text-decoration-style: inherit;
     color: inherit;
 }
 
@@ -191,4 +191,5 @@ nav.footer a:hover {
 #interests a {
     text-decoration: none ! important;
     color: inherit ! important;
+    border-bottom: 1px dashed #aaa;
 }
