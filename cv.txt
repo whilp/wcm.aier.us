@@ -22,7 +22,7 @@ I believe that open standards and free software can not only measure new particl
 
 ## Experience
 
-### Systems Programmer 
+### Systems programmer 
 #### [University of Wisconsin][] [CMS Tier 2 Center] (2010–)
 
  * Led operations of the University's NSF- and DOE-supported LHC physics analysis center.
@@ -30,7 +30,7 @@ I believe that open standards and free software can not only measure new particl
  * Migrated 2.2 PB storage cluster to the Hadoop distributed file system with minimal downtime.
  * Built a Mercurial hosting service and made it the core of code, configuration management and documentation workflows.
 
-### Associate Systems Programmer 
+### Associate systems programmer 
 #### [University of Wisconsin][] [CMS Tier 2 Center] (2006–2010)
  * Developed custom software in Python to monitor cluster performance.
  * Optimized performance of critical PostgreSQL database servers.
@@ -102,7 +102,7 @@ I believe that open standards and free software can not only measure new particl
 [madlug]:           http://madisonlinux.org/Home
 [osgahm2011-t3]:   http://www.hep.wisc.edu/~wcmaier/talks/osgahm-2011-t3sec
 
-## Contributions and Memberships
+## Contributions and memberships
 
  * [OpenBSD] developer (2008–).
  * [Madison Linux Users Group] member (2002–).
