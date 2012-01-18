@@ -8,7 +8,8 @@ DRAFT =		new-tools.txt
 MINCSS =	css/site.min.css
 PDF =		cv.pdf
 BUILT =		${PUBLISHED:%.txt=%} ${PDF} ${MINCSS}
-OUTPUTS =	${PUBLISHED} ${BUILT}
+STATIC =	wcmaier-key.gpg wcmaier-key.txt
+OUTPUTS =	${PUBLISHED} ${BUILT} ${STATIC}
 
 PANDOC =	pandoc \
 			--email-obfuscation=none \
