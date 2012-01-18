@@ -12,7 +12,7 @@
 
 ## Site Links
 
- * [CV](/cv)
- * [colophon](/colophon)
- * [copyright](/copyright)
- * [gpg](/wcmaier-key.txt)
+ * [CV](cv)
+ * [colophon](colophon)
+ * [copyright](copyright)
+ * [gpg](wcmaier-key.txt)
