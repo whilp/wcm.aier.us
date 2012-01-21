@@ -8,7 +8,9 @@ address
     (43.073338;-89.405071)
 www
 :   <http://wcm.aier.us/>
+:   <http://twitter.com/wcmaier>
 :   <http://github.com/wcmaier>
+:   <http://careers.stackoverflow.com/wcmaier>
 email
 :   <will@m.aier.us>
 mobile
