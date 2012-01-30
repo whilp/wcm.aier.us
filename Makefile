@@ -40,9 +40,6 @@ serve:
 index: index.txt
 	${PANDOC} --template=${TEMPLATES}/bare.xhtml -o $@ $<
 
-toys/chess: toys/chess.txt
-	${PANDOC} --template=${TEMPLATES}/bare.xhtml -c asdf -o $@ $<
-
 ${MINCSS}: ${CSS}
 	cat ${CSS} | cssmin > ${MINCSS}
 
