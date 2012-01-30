@@ -3,7 +3,7 @@ SYNC =		bin/bucketsync -v ${BUCKET}
 TEMPLATES =	templates
 
 CSS =		css/GGS.css css/font.css css/site.css
-PUBLISHED =	colophon.txt copyright.txt cv.txt index.txt
+PUBLISHED =	colophon.txt copyright.txt cv.txt index.txt toys/chess.txt
 DRAFT =		new-tools.txt
 MINCSS =	css/site.min.css
 PDF =		cv.pdf
@@ -39,6 +39,9 @@ serve:
 
 index: index.txt
 	${PANDOC} --template=${TEMPLATES}/bare.xhtml -o $@ $<
+
+toys/chess: toys/chess.txt
+	${PANDOC} --template=${TEMPLATES}/bare.xhtml -c asdf -o $@ $<
 
 ${MINCSS}: ${CSS}
 	cat ${CSS} | cssmin > ${MINCSS}

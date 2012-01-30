@@ -1,44 +1,8 @@
-<html>
-<head>
-  <title>jschess</title>
-  <meta charset="utf-8">
-  <style>
-  table,
-  table th,
-  table tr,
-  table td {
-    margin: 0;
-    padding: 0;
-  }
-
-  table td,
-  table th {
-    width: 1.3em;
-    height: 1.3em;
-    text-align: center;
-  }
-
-  .board {
-    background: #000;
-  }
-
-  .square {
-    background: #fff;
-    font-size: 2.7em;
-  }
-
-  .highlight {
-    background: red;
-  }
-
-  </style>
-</head>
-<body>
-
 <div id="board">
 </div>
 
 <script type="text/javascript" charset="utf-8">
+/* <![CDATA[ */
 (function () {
   var delimiter = ",",
       files = "abcdefgh",
@@ -334,7 +298,6 @@
   console.log("play");
   play(board, moves);
   console.log("done");
+/* ]]> */
 })();
 </script>
-</body>
-</html>

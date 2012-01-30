@@ -197,3 +197,32 @@ nav.footer a:hover {
     color: inherit ! important;
     border-bottom: 1px dashed #aaa;
 }
+
+/* Chess */
+table,
+table th,
+table tr,
+table td {
+	margin: 0;
+	padding: 0;
+}
+
+table td,
+table th {
+	width: 1.3em;
+	height: 1.3em;
+	text-align: center;
+}
+
+.board {
+	background: #000;
+}
+
+.square {
+	background: #fff;
+	font-size: 2.7em;
+}
+
+.highlight {
+	background: red;
+}
