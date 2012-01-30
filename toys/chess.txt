@@ -8,9 +8,11 @@ vs the World][].
 [moves]:                    ./chess?moves=e4,c5,Nf3,d6,Bb5+,Bd7,Bxd7+,Qxd7,c4,Nc6,Nc3,Nf6,0-0,g6
 [Kasparov vs the World]:    http://en.wikipedia.org/wiki/Kasparov_versus_the_World
 
-[Chess.js][] is under active development. Have fun.
+[Chess.js][] is under active development and not all aspects of [algebraic
+notation][] are supported yet. Have fun.
 
-[chess.js]:                  http://github.com/wcmaier/chessjs
+[chess.js]:                 http://github.com/wcmaier/chessjs
+[algebraic notation]:       http://en.wikipedia.org/wiki/Algebraic_notation_%28chess%29
 
 <div id="board">
 </div>
