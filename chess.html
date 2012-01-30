@@ -1,0 +1,340 @@
+<html>
+<head>
+  <title>jschess</title>
+  <meta charset="utf-8">
+  <style>
+  table,
+  table th,
+  table tr,
+  table td {
+    margin: 0;
+    padding: 0;
+  }
+
+  table td,
+  table th {
+    width: 1.3em;
+    height: 1.3em;
+    text-align: center;
+  }
+
+  .board {
+    background: #000;
+  }
+
+  .square {
+    background: #fff;
+    font-size: 2.7em;
+  }
+
+  .highlight {
+    background: red;
+  }
+
+  </style>
+</head>
+<body>
+
+<div id="board">
+</div>
+
+<script type="text/javascript" charset="utf-8">
+(function () {
+  var delimiter = ",",
+      files = "abcdefgh",
+      ranks = "12345678",
+      players = ["white", "black"],
+      board = {},
+      pieces = {
+        "k": "♔", "q": "♕", "r": "♖", "b": "♗", "n": "♘", "p": "♙",
+        "K": "♚", "Q": "♛", "R": "♜", "B": "♝", "N": "♞", "P": "♟",
+        undefined: " ",
+      };
+
+  /* Add a name to elem.className if it's not already present. */
+  function addclass(elem, cls) {
+    var names = elem.className.split(" ");
+    for (var i = 0; i < names.length; i++) {
+      if (names[i] == cls) {
+        return;
+      };
+    };
+    elem.className += " " + cls;
+  };
+
+  /* Initialize board state. */
+  function init(board) {
+    var initialstate = {
+          "8": "RNBQKBNR",
+          "7": "PPPPPPPP",
+          "2": "pppppppp",
+          "1": "rnbqkbnr",
+        };
+
+    for (var rank in initialstate) {
+      for (var i = 0; i < initialstate[rank].length; i++) {
+        board[files[i] + rank] = initialstate[rank][i];
+      };
+    };
+  };
+
+  /* Render a board. */
+  function render(board) {
+    var table = document.createElement("table");
+    addclass(table, "board");
+
+    for (var rank = ranks.length - 1; rank >= 0; rank--) {
+      var row = document.createElement("tr"),
+          r = ranks[rank];
+
+      for (var file = 0; file < files.length; file++) {
+        var f = files[file],
+            cell = document.createElement("td"),
+            piece = board[f + r];
+
+        addclass(cell, "square");
+        cell.id = "position-" + f + r;
+        if (piece == undefined) {
+          addclass(cell, "empty");
+        };
+        contents = document.createTextNode(pieces[piece]);
+        cell.appendChild(contents);
+
+        row.appendChild(cell);
+      };
+      table.appendChild(row);
+    };
+
+    return table;
+  };
+
+  function movedirections(board, x, y, directions, piece, maxdistance) {
+    var candidates = [];
+    maxdistance = maxdistance || files.length;
+
+    for (var distance = 1; distance < maxdistance; distance++) {
+      for (var i = 0; i < directions.length; i++) {
+        var candidate = {
+              x: x + (distance * directions[i].x),
+              y: y + (distance * directions[i].y),
+            },
+            position = files[candidate.x] + ranks[candidate.y],
+            state = board[position];
+
+        if (state == piece) {
+          candidates.push(candidate);
+        } else if (state != undefined) {
+          directions.splice(i, 1);
+        };
+      };
+    };
+
+    return candidates;
+  };
+
+  function movediagonals(board, x, y, piece, maxdistance) {
+    var directions = [
+          {x: 1, y: 1},
+          {x: 1, y: -1},
+          {x: -1, y: 1},
+          {x: -1, y: -1},
+        ];
+
+    return movedirections(board, x, y, directions, piece, maxdistance);
+  };
+
+  function moveranknfiles(board, x, y, piece, maxdistance) {
+    var directions = [
+          {x: 1, y: 0},
+          {x: -1, y: 0},
+          {x: 0, y: 1},
+          {x: 0, y: -1},
+        ];
+
+    return movedirections(board, x, y, directions, piece, maxdistance);
+  };
+
+  function parse(board, move, n) {
+    var moves = [],
+        orig = move,
+        move = move.split(""),
+        drank = move.pop(),
+        check = false,
+        castle = false;
+
+    if (drank == "+") {
+      check = true;
+      drank = move.pop();
+    };
+
+    if (drank == "0" || drank == "O") {
+      var crank = (n % 2) ? "8" : "1";
+
+      if (orig.split("-").length == 2) {
+        /* Kingside. */
+        var before = {K: "e", R: "h"},
+            after =  {K: "g", R: "f"};
+      } else {
+        /* Queenside. */
+        var before = {K: "d", R: "a"},
+            after =  {K: "b", R: "c"};
+      };
+      castle = {
+        before: before,
+        after: after,
+      }
+
+      return [
+        {
+          src: before.K + crank,
+          dst: after.K + crank,
+          piece: (n % 2) ? "K" : "k",
+        },
+        {
+          src: before.R + crank,
+          dst: after.R + crank,
+          piece: (n % 2) ? "R" : "r",
+        },
+      ];
+    };
+
+    var dfile = move.pop(),
+        piece = move.pop(),
+        capture = false;
+
+    if (piece == "x") {
+      capture = true;
+      piece = move.pop();
+    };
+
+    var dst = dfile + drank,
+        src, x, y,
+        candidates = [],
+        matches = [];
+
+    if (piece == undefined) {
+      piece = "p";
+    }
+
+    if (n % 2) {
+      piece = piece.toUpperCase();
+    } else {
+      piece = piece.toLowerCase();
+    };
+
+    for (var i = 0; i < files.length; i++) {
+      if (files[i] == dfile) {
+        x = i;
+      };
+    };
+    for (var i = 0; i < ranks.length; i++) {
+      if (ranks[i] == drank) {
+        y = i;
+      };
+    };
+
+    /* XXX: En passant. */
+    if (piece == "p") {
+      candidates = [
+        {x: x, y: y - 1},
+        {x: x, y: y - 2},
+      ];
+    } else if (piece == "P") {
+      candidates = [
+        {x: x, y: y + 1},
+        {x: x, y: y + 2},
+      ];
+    } else if (piece == "n" || piece == "N") {
+      candidates = [
+        {x: x + 1, y: y - 2},
+        {x: x - 1, y: y - 2},
+        {x: x + 1, y: y + 2},
+        {x: x - 1, y: y + 2},
+      ];
+    } else if (piece == "b" || piece == "B") {
+      candidates = movediagonals(board, x, y, piece);
+    } else if (piece == "q" || piece == "Q") {
+
+      candidates = candidates.concat(
+        movediagonals(board, x, y, piece),
+        moveranknfiles(board, x, y, piece));
+    };
+
+    for (var i = 0; i < candidates.length; i++) {
+      var candidate = candidates[i];
+
+      candidate.file = files[candidate.x];
+      candidate.rank = ranks[candidate.y];
+      candidate.pos = candidate.file + candidate.rank;
+
+      if (board[candidate.pos] == piece) {
+        matches.push(candidate);
+      };
+    };
+
+    /* XXX: Handle edge cases. */
+    if (matches.length < 1) {
+      /* XXX: Failed to find a candidate for src. */
+    } else if (matches.length > 1) {
+      /* XXX: Too many candidates. */
+    }
+
+    moves.push({
+      src: matches[0].pos,
+      dst: dst,
+      piece: piece,
+      check: check,
+      capture: capture ? board[dst] : false,
+    });
+
+    return moves;
+  };
+
+  function update(board, move) {
+    board[move.src] = undefined;
+    board[move.dst] = move.piece;
+
+    var src = document.getElementById("position-" + move.src),
+      contents = src.firstChild;
+    src.replaceChild(
+      document.createTextNode(" "),
+      contents);
+
+    var dst = document.getElementById("position-" + move.dst),
+        contents = dst.firstChild;
+    dst.replaceChild(
+      document.createTextNode(pieces[move.piece]),
+      contents);
+  };
+
+  /* Play a game. */
+  function play (board, moves) {
+    for (var i = 0; i < moves.length; i++) {
+      var move = parse(board, moves[i], i);
+
+      for (var j = 0; j < move.length; j++) {
+        update(board, move[j]);
+      };
+    };
+  };
+
+  console.log("init");
+  init(board);
+
+  var boardelem = document.getElementById("board");
+
+  console.log("render");
+  var table = render(board);
+  boardelem.appendChild(table);
+
+  var moves = window.location.search.substring(1)
+    .split("=")[1]
+    .split(delimiter);
+
+  console.log("play");
+  play(board, moves);
+  console.log("done");
+})();
+</script>
+</body>
+</html>
