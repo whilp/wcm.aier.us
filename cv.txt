@@ -127,7 +127,7 @@ I believe that open standards and free software can not only measure new particl
 
  * Distributed computing (Condor, HDFS).
  * Operations and configuration management (CFengine, Chef, Puppet).
- * Programming (Python, shell).
+ * Programming (Python, shell, JavaScript).
  * Performance and reliability monitoring (Ganglia, Nagios).
  * Operating systems (BSD, Linux).
  * Cycling, cooking, coffee, cats, newspapers, magazines, electronic music.
