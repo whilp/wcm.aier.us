@@ -12,7 +12,7 @@ www
 :   <http://github.com/wcmaier>
 :   <http://careers.stackoverflow.com/wcmaier>
 email
-:   <will@m.aier.us>
+:   <wcmaier@m.aier.us>
 mobile
 :   +1 608 438 6162
 
