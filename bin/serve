@@ -43,9 +43,8 @@ class Handler(SimpleHTTPRequestHandler):
         if type == "application/octet-stream":
             chunk = open(path, 'rb').read(1024)
             if "html" in chunk:
-                if "xmlns=" in chunk:
-                    return "application/xhtml+xml"
-                return "text/html"
+                type = "text/html"
+        return type
 
     def log_message(self, format, *args):
         log.info(format, *args)
