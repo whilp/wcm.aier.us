@@ -133,15 +133,17 @@ p {
   margin: 1em;
 }
 
+ul {
+  margin: 0;
+}
+
+li {
+  margin: 0 1em 0 1em;
+  list-style-type: none;
+}
+
 footer,
 footer a
 {
   color: #bbb;
-}
-
-footer ul,
-footer li
-{
-  list-style-type: none;
-  margin: 1em;
 }
