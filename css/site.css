@@ -124,3 +124,11 @@ td { vertical-align: top; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; }
 }
+
+html, button, input, select, textarea {
+  font-family: 'Open Sans', Helvetica, Verdana, Arial, sans-serif;
+}
+
+p {
+  margin: 1em;
+}
