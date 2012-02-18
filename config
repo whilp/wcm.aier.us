@@ -3,3 +3,8 @@ template: page.html
 description: Me, on the web.
 author: Will Maier <wcmaier@m.aier.us>
 analytics: 28523181-1
+css:
+  - http://fonts.googleapis.com/css?family=Open+Sans
+  - site.min.css
+js:
+  - modernizr.custom.04939.js
