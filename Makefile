@@ -33,7 +33,7 @@ ${MINCSS}: ${CSS}
 	cat ${CSS} | cssmin > ${MINCSS}
 
 .txt:
-	 ./bin/wrender $<
+	 wrender $<
 
 .txt.pdf:
 	markdown2pdf $<
