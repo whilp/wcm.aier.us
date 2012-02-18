@@ -1,1 +1,5 @@
-template: base.html
+site: wcm.aier.us
+template: page.html
+description: Me, on the web.
+author: Will Maier <wcmaier@m.aier.us>
+analytics: 28523181-1
