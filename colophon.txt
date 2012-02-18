@@ -1,4 +1,4 @@
-% Colophon
+title: Colophon
 
 This site is written in plain text, converted from [Markdown] to [XHTML5] using [Pandoc], responsively styled with [GGS], typeset in [Open Sans] and deployed to Amazon's [S3] and [Cloudfront] using scripts based on [Boto].
 

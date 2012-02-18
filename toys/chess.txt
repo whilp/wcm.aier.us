@@ -1,4 +1,4 @@
-# Chess.js
+title: Chess.js
 
 Play through a game of chess on the board below by adding moves (separated by
 commas) in algebraic notation to this web page's URL. For example, [this
