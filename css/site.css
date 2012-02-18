@@ -132,3 +132,16 @@ html, button, input, select, textarea {
 p {
   margin: 1em;
 }
+
+footer,
+footer a
+{
+  color: #bbb;
+}
+
+footer ul,
+footer li
+{
+  list-style-type: none;
+  margin: 1em;
+}
