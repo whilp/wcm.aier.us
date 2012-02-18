@@ -2,7 +2,7 @@ title: Colophon
 
 This site is written in plain text, converted from [Markdown] to [XHTML5] using [Pandoc], responsively styled with [GGS], typeset in [Open Sans] and deployed to Amazon's [S3] and [Cloudfront] using scripts based on [Boto].
 
-The text files that become these web pages and the bits of code that glue them, Pandoc and S3/Cloudfront together are stored in a [Mercurial] repository hosted at [Github] ([seriously](hg-git)).
+The text files that become these web pages and the bits of code that glue them, Pandoc and S3/Cloudfront together are stored in a [Mercurial] repository hosted at [Github] \([seriously][hg-git]\).
 
 [Markdown]:     http://daringfireball.net/projects/markdown/
 [XHTML5]:       http://dev.w3.org/html5/html-author/#polyglot-documents
