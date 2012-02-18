@@ -1,3 +1,4 @@
 misaka>=1.0.1
 Mako>=0.6.2
 PyYAML>=3.10
+cssmin>=0.1.4
