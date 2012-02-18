@@ -129,7 +129,20 @@ html, button, input, select, textarea {
   font-family: 'Open Sans', Helvetica, Verdana, Arial, sans-serif;
 }
 
-p {
+pre {
+  overflow: scroll;
+  border-left: 2px solid #ccc;
+  padding-left: 1em;
+}
+
+pre code {
+  display: block;
+  width: 50em;
+}
+
+p,
+pre
+{
   margin: 1em;
 }
 
@@ -147,3 +160,4 @@ footer a
 {
   color: #bbb;
 }
+
