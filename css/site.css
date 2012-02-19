@@ -127,6 +127,7 @@ td { vertical-align: top; }
 
 html, button, input, select, textarea {
   font-family: 'Open Sans', Helvetica, Verdana, Arial, sans-serif;
+  font-weight: 300;
 }
 
 h1,
@@ -136,6 +137,8 @@ h4,
 h5,
 h6
 {
+  font-family: 'Open Sans', Helvetica, Verdana, Arial, sans-serif;
+  font-weight: 300;
   margin: 1em 0 1em .5em;
   padding: 0
 }
@@ -168,12 +171,11 @@ li {
 }
 
 #header * {
-  margin-top: 0;
+  margin: 0;
 }
 
 #footer,
 #header {
-  background: #000;
 }
 
 #header,
@@ -185,8 +187,6 @@ li {
 #footer a:hover,
 #footer a:active
 {
-  background: #000;
-  color: #fff;
   text-decoration: none;
 }
 
