@@ -167,6 +167,10 @@ li {
   list-style-type: none;
 }
 
+#header * {
+  margin-top: 0;
+}
+
 #footer,
 #header {
   background: #000;
@@ -181,7 +185,7 @@ li {
 #footer a:hover,
 #footer a:active
 {
-  background: #000
+  background: #000;
   color: #fff;
   text-decoration: none;
 }
