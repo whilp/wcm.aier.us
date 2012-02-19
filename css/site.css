@@ -48,7 +48,7 @@ h5,
 h6
 {
   font-size: 1em;
-  margin: 0 0 1em 0;
+  margin: 0 0 1em .2em;
 }
 h1 { font-size: 2.00em; }
 h2 { font-size: 1.75em; }
