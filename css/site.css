@@ -167,9 +167,22 @@ li {
   list-style-type: none;
 }
 
-footer,
-footer a
+#footer,
+#header {
+  background: #000;
+}
+
+#header,
+#footer,
+#footer a,
+#footer a:visited,
+#footer a:hover,
+#footer a:focus,
+#footer a:hover,
+#footer a:active
 {
-  color: #bbb;
+  background: #000
+  color: #fff;
+  text-decoration: none;
 }
 
