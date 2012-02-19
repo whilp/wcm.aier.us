@@ -1,101 +1,108 @@
 title: William C. Maier
 
-## Contact
+# Contact
 
-address
-:   1235 Chandler St  
-    Madison, WI 53715 USA  
-    (43.073338;-89.405071)
-www
-:   <http://wcm.aier.us/>
-:   <http://twitter.com/wcmaier>
-:   <http://github.com/wcmaier>
-:   <http://careers.stackoverflow.com/wcmaier>
-email
-:   <wcmaier@m.aier.us>
-mobile
-:   +1 608 438 6162
+###### address
 
-## Summary
+1235 Chandler St  
+Madison, WI 53715 USA  
+(43.073338;-89.405071)
+
+###### www
+
+* <http://wcm.aier.us/>
+* <http://twitter.com/wcmaier>
+* <http://github.com/wcmaier>
+* <http://careers.stackoverflow.com/wcmaier>
+
+###### email
+
+* <wcmaier@m.aier.us>
+
+###### mobile
+
+* +1 608 438 6162
+
+# Summary
 
 I'm fascinated by big data in science and on the web.
 These huge new datasets present some of today's most exciting challenges, and open source software has given me the tools to help tackle them.
 I believe that open standards and free software can not only measure new particles or reveal social networks — I believe we can use them to save the world, and I want to help.
 
-## Experience
+# Experience
 
-### Systems programmer 
-#### [University of Wisconsin][] [CMS Tier 2 Center] (2010–)
+## Systems programmer 
+### [University of Wisconsin][] [CMS Tier 2 Center] (2010–)
 
- * Led operations of the University's NSF- and DOE-supported LHC physics analysis center.
- * Grew Linux cluster from 200 to 2300 cores for analysis and from 100 terabytes to 1.2 petabytes for distributed data storage.
- * Migrated 2.2 PB storage cluster to the Hadoop distributed file system with minimal downtime.
- * Built a Mercurial hosting service and made it the core of code, configuration management and documentation workflows.
+* Led operations of the University's NSF- and DOE-supported LHC physics analysis center.
+* Grew Linux cluster from 200 to 2300 cores for analysis and from 100 terabytes to 1.2 petabytes for distributed data storage.
+* Migrated 2.2 PB storage cluster to the Hadoop distributed file system with minimal downtime.
+* Built a Mercurial hosting service and made it the core of code, configuration management and documentation workflows.
 
-### Associate systems programmer 
-#### [University of Wisconsin][] [CMS Tier 2 Center] (2006–2010)
- * Developed custom software in Python to monitor cluster performance.
- * Optimized performance of critical PostgreSQL database servers.
- * Analyzed security breaches and developed proactive measures to increase site and user security.
+## Associate systems programmer 
+### [University of Wisconsin][] [CMS Tier 2 Center] (2006–2010)
+* Developed custom software in Python to monitor cluster performance.
+* Optimized performance of critical PostgreSQL database servers.
+* Analyzed security breaches and developed proactive measures to increase site and user security.
 
 [University of Wisconsin]:  http://wisc.edu/
 [CMS Tier 2 Center]:        http://hep.wisc.edu/cms/comp
 
-### Student systems administrator
-#### University of Wisconsin [High Energy Physics] (2005–2006)
+## Student systems administrator
+### University of Wisconsin [High Energy Physics] (2005–2006)
 
- * Developed a custom request tracking system in Python based on Roundup.
- * Deployed a 10 Gb/s fiber-optic network.
- * Developed and configured custom Nagios and Ganglia probes to monitor grid and infrastructure services.
+* Developed a custom request tracking system in Python based on Roundup.
+* Deployed a 10 Gb/s fiber-optic network.
+* Developed and configured custom Nagios and Ganglia probes to monitor grid and infrastructure services.
 
 [High Energy Physics]:      http://hep.wisc.edu/
 
-### Student systems administrator
-#### University of Wisconsin [College of Engineering] (2005–2006)
+## Student systems administrator
+### University of Wisconsin [College of Engineering] (2005–2006)
 
- * Installed and maintained a large, OpenAFS-based software repository including open source and commercial software.
- * Maintained and improved the Center's request tracker, written in Perl.
- * Supported college-wide mail, webmail, DNS and Apache virtual hosts in addition to large Linux and Solaris desktop labs.
+* Installed and maintained a large, OpenAFS-based software repository including open source and commercial software.
+* Maintained and improved the Center's request tracker, written in Perl.
+* Supported college-wide mail, webmail, DNS and Apache virtual hosts in addition to large Linux and Solaris desktop labs.
 
 [College of Engineering]:   http://cae.wisc.edu/
 
-### Student software trainer
-#### University of Wisconsin [Division of Information Technology] (2005–2006)
+## Student software trainer
+### University of Wisconsin [Division of Information Technology] (2005–2006)
 
- * Wrote new curriculum to teach Unix fundamentals to university students.
+* Wrote new curriculum to teach Unix fundamentals to university students.
 
 [Division of Information Technology]:   http://www.doit.wisc.edu/training/student/
 
-### Student network administrator
-#### Central Properties, Madison, WI (2004–2005)
+## Student network administrator
+### Central Properties, Madison, WI (2004–2005)
 
- * Installed custom security monitoring tools for a large residential network.
+* Installed custom security monitoring tools for a large residential network.
 
-## Education
+# Education
 
-### University of Wisconsin (2002–2006)
+## University of Wisconsin (2002–2006)
 
- * BA, [History of Science], 3.6 GPA (Fall 2006); Dean's list (Fall 2003).
- * Advanced study of [German].
+* BA, [History of Science], 3.6 GPA (Fall 2006); Dean's list (Fall 2003).
+* Advanced study of [German].
 
 [History of Science]:   http://histsci.wisc.edu/
 [German]:               http://german.lss.wisc.edu/new_web/
 
-### [University of Wisconsin – Milwaukee] (2001–2002)
+## [University of Wisconsin – Milwaukee] (2001–2002)
 
- * Studied German at university during senior year of high school.
+* Studied German at university during senior year of high school.
 
 [University of Wisconsin – Milwaukee]:  http://www4.uwm.edu/letsci/fll/undergrad/german.cfm
 
-## Talks and publications
+# Talks and publications
 
- * *[A highly distributed, petascale migration from dCache to HDFS][hepix2011]*, HEPiX, Simon Fraser University (2011).
- * *OpenBSD*, [Barcamp Madison][barcampmsn] (2011).
- * *[Linux at the LHC][linuxlhc]*, [Madison Linux Users Group][madlug], [Milwaukee Linux Users group][mkelug] (2011).
- * *[Security best practices][osgahm2011-t3]*, Open Science Grid All Hands Meeting, Harvard Medical School (2011).
- * *Storage at UW-Madison CMS Tier-2*, Open Science Grid Storage Forum (2009, 2010).
- * *Grid computing panel*, Condor Week, University of Wisconsin (2009).
- * *dCache Performance and Management*, USCMS Tier 2 Computing Workshop, UCSD (2007).
+* *[A highly distributed, petascale migration from dCache to HDFS][hepix2011]*, HEPiX, Simon Fraser University (2011).
+* *OpenBSD*, [Barcamp Madison][barcampmsn] (2011).
+* *[Linux at the LHC][linuxlhc]*, [Madison Linux Users Group][madlug], [Milwaukee Linux Users group][mkelug] (2011).
+* *[Security best practices][osgahm2011-t3]*, Open Science Grid All Hands Meeting, Harvard Medical School (2011).
+* *Storage at UW-Madison CMS Tier-2*, Open Science Grid Storage Forum (2009, 2010).
+* *Grid computing panel*, Condor Week, University of Wisconsin (2009).
+* *dCache Performance and Management*, USCMS Tier 2 Computing Workshop, UCSD (2007).
 
 [hepix2011]:        https://indico.cern.ch/contributionDisplay.py?sessionId=8&contribId=8&confId=138424
 [barcampmsn]:       http://www.barcampmadison.org/
@@ -104,14 +111,14 @@ I believe that open standards and free software can not only measure new particl
 [madlug]:           http://madisonlinux.org/Home
 [osgahm2011-t3]:   http://www.hep.wisc.edu/~wcmaier/talks/osgahm-2011-t3sec
 
-## Contributions and memberships
+# Contributions and memberships
 
- * [OpenBSD] developer (2008–).
- * [Madison Linux Users Group] member (2002–).
- * [Social Justice Center] board of directors, secretary (2004–2005).
- * [Madison Community Cooperative] board of directors, member (2004–2005).
- * Developer of open source projects including [cli] and [ptemplate].
- * Contributor to open source projects including [Mercurial], [Sphinx] and [tmux].
+* [OpenBSD] developer (2008–).
+* [Madison Linux Users Group] member (2002–).
+* [Social Justice Center] board of directors, secretary (2004–2005).
+* [Madison Community Cooperative] board of directors, member (2004–2005).
+* Developer of open source projects including [cli] and [ptemplate].
+* Contributor to open source projects including [Mercurial], [Sphinx] and [tmux].
 
 [OpenBSD]:                      http://openbsd.org/
 [Madison Linux Users Group]:    http://madisonlinux.org/
@@ -123,14 +130,14 @@ I believe that open standards and free software can not only measure new particl
 [Sphinx]:                       http://sphinx.pocoo.org/
 [tmux]:                         http://tmux.sf.net/
 
-## Interests
+# Interests
 
- * Distributed computing (Condor, HDFS).
- * Operations and configuration management (CFengine, Chef, Puppet).
- * Programming (Python, shell, JavaScript).
- * Performance and reliability monitoring (Ganglia, Nagios).
- * Operating systems (BSD, Linux).
- * Cycling, cooking, coffee, cats, newspapers, magazines, electronic music.
+* Distributed computing (Condor, HDFS).
+* Operations and configuration management (CFengine, Chef, Puppet).
+* Programming (Python, shell, JavaScript).
+* Performance and reliability monitoring (Ganglia, Nagios).
+* Operating systems (BSD, Linux).
+* Cycling, cooking, coffee, cats, newspapers, magazines, electronic music.
 
 References available upon request.
 An HTML version of this document is available on the web ([http://wcm.aier.us/cv](/cv)); a PDF version is also available ([http://wcm.aier.us/cv.pdf](/cv.pdf)).
