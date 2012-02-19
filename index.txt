@@ -3,17 +3,17 @@ template: bare.html
 
 # wcmaier
 
-## Web Links
+## Web
  
  * [twitter.com/](http://twitter.com/wcmaier)
  * [github.com/](http://github.com/wcmaier)
 
-## Mail Links
+## Mail
 
  * [@hep.wisc.edu](mailto:wcmaier@hep.wisc.edu)
  * [@openbsd.org](mailto:wcmaier@openbsd.org)
 
-## Site Links
+## Site
 
  * [CV](cv)
  * [colophon](colophon)
