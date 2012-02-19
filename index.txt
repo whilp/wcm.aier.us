@@ -1,4 +1,5 @@
 title: wcmaier
+template: bare.html
 
 ## Web
  
