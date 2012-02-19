@@ -1,7 +1,4 @@
-title: welcome
-template: bare.html
-
-# wcmaier
+title: wcmaier
 
 ## Web
  
