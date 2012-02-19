@@ -4,9 +4,9 @@ title: William C. Maier
 
 ###### address
 
-1235 Chandler St  
-Madison, WI 53715 USA  
-(43.073338;-89.405071)
+* 1235 Chandler St
+* Madison, WI 53715 USA
+* (43.073338;-89.405071)
 
 ###### www
 
