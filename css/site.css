@@ -36,7 +36,7 @@ li
   margin: 0 0 .5em 0;
 }
 
-body > header h1 {
+#header h1 {
   font-size: 3em;
 }
 
@@ -96,6 +96,10 @@ li {
 #footer a:active
 {
   text-decoration: none;
+}
+
+#footer {
+  margin: 2em 0 0 0;
 }
 
 #footer ul {
