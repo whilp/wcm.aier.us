@@ -10,10 +10,9 @@ title: William C. Maier
 
 ###### www
 
-* <http://wcm.aier.us/>
-* <http://twitter.com/wcmaier>
-* <http://github.com/wcmaier>
-* <http://careers.stackoverflow.com/wcmaier>
+* [wcm.aier.us](http://wcm.aier.us/)
+* [twitter.com/wcmaier](http://twitter.com/wcmaier)
+* [github.com/wcmaier](http://github.com/wcmaier)
 
 ###### email
 
