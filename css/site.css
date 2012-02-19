@@ -7,10 +7,6 @@ body {
   font-size: 100%;
 }
 
-ul {
-  margin: 1em 0 1em 0;
-}
-
 html,
 body,
 button,
@@ -35,9 +31,28 @@ li
   line-height: 1.4em;
 }
 
-h1 { font-size: 3.0em; }
-h2 { font-size: 2.0em; }
-h3 { font-size: 1.5em; }
+li
+{
+  margin: 0 0 .5em 0;
+}
+
+body > header h1 {
+  font-size: 3em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+  font-size: 1em;
+  margin: 0 0 1em 0;
+}
+h1 { font-size: 2.00em; }
+h2 { font-size: 1.75em; }
+h3 { font-size: 1.50em; }
 
 a,
 a:visited,
@@ -63,9 +78,10 @@ pre code {
 }
 
 p,
-pre
+pre,
+ul
 {
-  margin: 1em;
+  margin: 0 1em 1em 1em;
 }
 
 li {
