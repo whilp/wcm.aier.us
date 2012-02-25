@@ -116,6 +116,12 @@ li {
     margin: 0 auto 0 auto;
   }
 
+  p,
+  li
+  {
+    text-align: justify;
+  }
+
   #header h1 {
     font-size: 3em;
     margin: 0;
