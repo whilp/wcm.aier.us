@@ -48,7 +48,7 @@ h5,
 h6
 {
   font-size: 1em;
-  margin: 0 0 1em .2em;
+  margin: 0 0 .2em .2em;
 }
 h1 { font-size: 2.00em; }
 h2 { font-size: 1.75em; }
@@ -108,4 +108,71 @@ li {
 
 #footer li {
   display: inline;
+}
+
+@media screen and (min-width: 30em) {
+  body {
+    width: 25em;
+    margin: 0 auto 0 auto;
+  }
+
+  #header h1 {
+    font-size: 5em;
+    margin: 0;
+    text-align: center;
+  }
+
+  #Web h2,
+  #Mail h2,
+  #Site h2
+  {
+    display: none;
+  }
+
+  #Site li {
+    display: inline;
+  }
+
+  #Web,
+  #Mail
+  {
+    width: 42%;
+    float: left;
+  }
+
+  #Web a,
+  #Mail a
+  {
+    border: none;
+  }
+
+  #Web a {
+    margin-right: -5em;
+  }
+
+  #Web a:before, #Web a:after,
+  #Mail a:before, #Mail a:after
+  {
+    color: #fff;
+  }
+
+  #Web a:hover:before, #Web a:hover:after,
+  #Mail a:hover:before, #Mail a:hover:after
+  {
+    color: #999;
+    border-bottom: 1px solid #ccc;
+  }
+
+  #Web a:after,
+  #mail a:before {
+    content: 'wcmaier';
+  }
+
+  #Mail {
+    margin-left: 12%;
+  }
+
+  #Web { text-align: right; }
+  #Mail { text-align: left; }
+  #Site { text-align: center; }
 }
