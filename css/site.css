@@ -119,12 +119,6 @@ li {
     margin: 0 auto 0 auto;
   }
 
-  p,
-  li
-  {
-    text-align: justify;
-  }
-
   #header h1 {
     font-size: 3em;
     margin: 0;
@@ -161,6 +155,18 @@ li {
 @media screen and (min-width: 45em) {
   body { width: 40em; }
   #header h1 { font-size: 4.9em; }
+
+  p,
+  li
+  {
+    text-align: justify;
+  }
+
+  #Web p,
+  #Web li
+  {
+    text-align: right;
+  }
 
   #Contact section {
     width: 49%;
