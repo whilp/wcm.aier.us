@@ -83,7 +83,8 @@ pre code {
 
 p,
 pre,
-ul
+ul,
+table
 {
   margin: 0 1em 1em 1em;
 }
@@ -112,6 +113,36 @@ li {
 
 #footer li {
   display: inline;
+}
+
+/* Chess */
+.board th,
+.board tr,
+.board td
+{
+	margin: 0;
+	padding: 0;
+}
+
+.board td,
+.board th
+{
+	width: 1.3em;
+	height: 1.3em;
+	text-align: center;
+}
+
+.board {
+	background: #000;
+}
+
+.board .square {
+	background: #fff;
+	font-size: 2.7em;
+}
+
+.board .highlight {
+	background: red;
 }
 
 @media screen and (min-width: 30em) {
