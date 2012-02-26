@@ -158,4 +158,9 @@ li {
 @media screen and (min-width: 45em) {
   body { width: 40em; }
   #header h1 { font-size: 4.9em; }
+
+  #Contact section {
+    width: 49%;
+    float: left;
+  }
 }
