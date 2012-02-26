@@ -1,4 +1,4 @@
-title: William C. Maier
+title: William C. Maier
 
 # Contact
 
@@ -31,47 +31,47 @@ I believe that open standards and free software can not only measure new particl
 # Experience
 
 ## Systems programmer (2010–)
-### [University of Wisconsin][] [CMS Tier 2 Center][]
+### [University of Wisconsin][uw] [CMS Tier 2 Center][cmst2]
 
 * Led operations of the University's NSF- and DOE-supported LHC physics analysis center.
 * Grew Linux cluster from 200 to 2300 cores for analysis and from 100 terabytes to 1.2 petabytes for distributed data storage.
 * Migrated 2.2 PB storage cluster to the Hadoop distributed file system with minimal downtime.
 * Built a Mercurial hosting service and made it the core of code, configuration management and documentation workflows.
 
+[uw]:      http://wisc.edu/
+[cmst2]:   http://hep.wisc.edu/cms/comp
+
 ## Associate systems programmer (2006–2010)
-### University of Wisconsin CMS Tier 2 Center
+### University of Wisconsin CMS Tier 2 Center
 
 * Developed custom software in Python to monitor cluster performance.
 * Optimized performance of critical PostgreSQL database servers.
 * Analyzed security breaches and developed proactive measures to increase site and user security.
 
-[University of Wisconsin]:  http://wisc.edu/
-[CMS Tier 2 Center]:        http://hep.wisc.edu/cms/comp
-
 ## Student systems administrator (2005–2006)
-### University of Wisconsin [High Energy Physics][]
+### University of Wisconsin [High Energy Physics][hep]
 
 * Developed a custom request tracking system in Python based on Roundup.
 * Deployed a 10 Gb/s fiber-optic network.
 * Developed and configured custom Nagios and Ganglia probes to monitor grid and infrastructure services.
 
-[High Energy Physics]:      http://hep.wisc.edu/
+[hep]:      http://hep.wisc.edu/
 
 ## Student systems administrator (2005–2006)
-### University of Wisconsin [College of Engineering][]
+### University of Wisconsin [College of Engineering][cae]
 
 * Installed and maintained a large, OpenAFS-based software repository including open source and commercial software.
 * Maintained and improved the Center's request tracker, written in Perl.
 * Supported college-wide mail, webmail, DNS and Apache virtual hosts in addition to large Linux and Solaris desktop labs.
 
-[College of Engineering]:   http://cae.wisc.edu/
+[cae]:   http://cae.wisc.edu/
 
 ## Student software trainer (2005–2006)
-### University of Wisconsin [Division of Information Technology][]
+### University of Wisconsin [Division of Information Technology][doit]
 
 * Wrote new curriculum to teach Unix fundamentals to university students.
 
-[Division of Information Technology]:   http://www.doit.wisc.edu/training/student/
+[doit]:   http://www.doit.wisc.edu/training/student/
 
 ## Student network administrator (2004–2005)
 ### Central Properties, Madison, WI
@@ -88,11 +88,11 @@ I believe that open standards and free software can not only measure new particl
 [History of Science]:   http://histsci.wisc.edu/
 [German]:               http://german.lss.wisc.edu/new_web/
 
-## [University of Wisconsin – Milwaukee][] (2001–2002)
+## [University of Wisconsin – Milwaukee][uwm] (2001–2002)
 
 * Studied German at university during senior year of high school.
 
-[University of Wisconsin – Milwaukee]:  http://www4.uwm.edu/letsci/fll/undergrad/german.cfm
+[uwm]:  http://www4.uwm.edu/letsci/fll/undergrad/german.cfm
 
 # Talks and publications
 
