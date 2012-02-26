@@ -1,0 +1,7 @@
+title: wrender
+
+`wrender` builds web pages using [YAML], [Mako] templates and [Markdown].
+
+[YAML]:#XXX
+[Mako]:#XXX
+[Markdown]:#XXX
