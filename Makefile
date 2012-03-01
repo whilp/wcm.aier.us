@@ -10,10 +10,11 @@ PDF =		cv.pdf
 PDF =
 BUILT =		${HTML} ${PDF} ${MINCSS}
 HTML =		${PUBLISHED:%.txt=%}
+JS =		js/modernizr.custom.04939.js
 TEXT =		wcmaier-key.gpg wcmaier-key.txt
-COMPRESSABLE =	${HTML} ${MINCSS} ${TEXT}
+COMPRESSABLE =	${HTML} ${MINCSS} ${TEXT} ${JS}
 COMPRESSED =	${COMPRESSABLE:%=%.gz}
-OUTPUTS =	${PUBLISHED} ${BUILT} ${TEXT}
+OUTPUTS =	${PUBLISHED} ${BUILT} ${TEXT} ${JS}
 
 .SUFFIXES: .txt .pdf .gz
 
