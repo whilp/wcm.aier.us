@@ -8,8 +8,9 @@ PUBLISHED =	colophon.txt copyright.txt cv.txt index.txt wrender.txt toys/chess.t
 DRAFT =		new-tools.txt
 PDF =		cv.pdf
 BUILT =		${PUBLISHED:%.txt=%} ${PDF} ${MINCSS}
-COMPRESSED =	${BUILT:%=%.gz}
 STATIC =	wcmaier-key.gpg wcmaier-key.txt
+COMPRESSABLE =	${PUBLISHED} ${MINCSS} ${STATIC}
+COMPRESSED =	${COMPRESSABLE:%=%.gz}
 OUTPUTS =	${PUBLISHED} ${BUILT} ${STATIC}
 
 .SUFFIXES: .txt .pdf .gz
