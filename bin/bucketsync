@@ -83,8 +83,8 @@ def synckey(key, fp, public=True, always=False, **kwargs):
     headers = None
     contenttype = magic(fp)
     if contenttype is not None:
-	log.debug("guessed magic Content-Type %r for key %r", contenttype, name)
-    	headers = {"Content-Type": contenttype}
+        log.debug("guessed magic Content-Type %r for key %r", contenttype, name)
+        headers = {"Content-Type": contenttype}
     log.info("uploading key %r", name)
     key.set_contents_from_file(fp, headers=headers, md5=md5)
     if public:
