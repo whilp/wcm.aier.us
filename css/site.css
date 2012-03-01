@@ -73,7 +73,7 @@ a:active
 }
 
 pre {
-  overflow: scroll;
+  overflow: auto;
   border-left: 2px solid #ccc;
   padding-left: 1em;
 }
