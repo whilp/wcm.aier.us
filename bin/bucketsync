@@ -97,6 +97,8 @@ def magic(fp):
     fp.seek(0)
     if "<html" in chunk and "xmlns=" in chunk:
     	return "application/xhtml+xml"
+    elif "<html" in chunk:
+        return "text/html"
 
 if __name__ == "__main__":
     try:
