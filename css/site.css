@@ -69,12 +69,12 @@ a:active
 {
   color: #666;
   text-decoration: none;
-  border-bottom: 1px solid #ccc;
+  border-bottom: .1em solid #ccc;
 }
 
 pre {
   overflow: auto;
-  border-left: 2px solid #ccc;
+  border-left: .2em solid #ccc;
   padding-left: 1em;
 }
 
