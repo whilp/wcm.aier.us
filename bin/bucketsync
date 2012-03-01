@@ -33,9 +33,11 @@ def main():
     log.debug("getting bucket %r", bucketname)
     bucket = conn.get_bucket(bucketname)
 
-    bucketsync(bucket, paths, delete=opts.delete)
+    bucketsync(bucket, paths, always=opts.always, delete=opts.delete)
 
 options = [
+    Option("-A", "--always", default=False, action="store_true",
+        help="overwrite keys whose contents have not changed"),
     Option("-d", "--delete", default=False, action="store_true",
         help="delete keys in the bucket that are not present in argv"),
     Option("-q", "--quiet", default=0, action="count",
@@ -46,7 +48,7 @@ options = [
         help="increase logging"),
 ]
 
-def bucketsync(bucket, paths, delete=True):
+def bucketsync(bucket, paths, delete=True, **kwargs):
     keys = dict((k.name, k) for k in bucket.list())
     log.debug("found %d active keys in bucket %r", len(keys), bucket.name)
 
@@ -57,7 +59,7 @@ def bucketsync(bucket, paths, delete=True):
             key = bucket.new_key(path)
 
         with open(path, 'rb') as fp:
-            synckey(key, fp)
+            synckey(key, fp, **kwargs)
 
     if delete:
         # Any leftover keys have been removed locally and should be deleted from S3.
@@ -65,7 +67,7 @@ def bucketsync(bucket, paths, delete=True):
             log.debug("deleting key %r", key)
             key.delete()
 
-def synckey(key, fp, public=True, **kwargs):
+def synckey(key, fp, public=True, always=False, **kwargs):
     name = key.name
     md5 = None
     if key.etag:
@@ -73,7 +75,7 @@ def synckey(key, fp, public=True, **kwargs):
         md5 = (md5sum, base64md5) = key.compute_md5(fp)
         if etag != md5sum:
             log.debug("MD5(%r)=%s does not match remote etag %s", name, md5sum, etag)
-        else:
+        elif not always:
             log.debug("key %r is unchanged", name)
             # Local and S3 copies match.
             return
