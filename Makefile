@@ -7,11 +7,13 @@ MINCSS =	${CSS:%.css=%.min.css}
 PUBLISHED =	colophon.txt copyright.txt cv.txt index.txt wrender.txt toys/chess.txt
 DRAFT =		new-tools.txt
 PDF =		cv.pdf
-BUILT =		${PUBLISHED:%.txt=%} ${PDF} ${MINCSS}
-STATIC =	wcmaier-key.gpg wcmaier-key.txt
-COMPRESSABLE =	${PUBLISHED} ${MINCSS} ${STATIC}
+PDF =
+BUILT =		${HTML} ${PDF} ${MINCSS}
+HTML =		${PUBLISHED:%.txt=%}
+TEXT =		wcmaier-key.gpg wcmaier-key.txt
+COMPRESSABLE =	${HTML} ${MINCSS} ${TEXT}
 COMPRESSED =	${COMPRESSABLE:%=%.gz}
-OUTPUTS =	${PUBLISHED} ${BUILT} ${STATIC}
+OUTPUTS =	${PUBLISHED} ${BUILT} ${TEXT}
 
 .SUFFIXES: .txt .pdf .gz
 
