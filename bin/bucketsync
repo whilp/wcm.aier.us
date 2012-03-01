@@ -81,6 +81,11 @@ def synckey(key, fp, public=True, always=False, **kwargs):
         log.debug("guessed Content-Type %r for key %r", contenttype, name)
         headers["Content-Type"] = contenttype
 
+    if os.path.exists(name + ".gz"):
+        fp = open(name + ".gz")
+        headers["Content-Encoding"] = "gzip"
+        log.debug("used compressed copy of key %r", name)
+
     if key.etag:
         etag = key.etag.strip("\"'")
         md5 = (md5sum, base64md5) = key.compute_md5(fp)
