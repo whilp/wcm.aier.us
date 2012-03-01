@@ -12,6 +12,9 @@
 <meta name="description" content="${description}" />
 <meta name="author" content="${author}" />
 
+% for href in remotecss:
+<link href="${href}" rel="stylesheet" type="text/css" />
+% endfor
 % for stylesheet in css:
 <link href="${root}/css/${stylesheet}" rel="stylesheet" type="text/css" />
 % endfor
