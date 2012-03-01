@@ -206,4 +206,8 @@ li {
     width: 49%;
     float: left;
   }
+
+  #Summary {
+    clear: both;
+  }
 }
