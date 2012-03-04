@@ -4,6 +4,12 @@ description: Me, on the web.
 author: Will Maier <wcmaier@m.aier.us>
 analytics: 28523181-1
 hastoc: false
+ext: ""
+exclude:
+  - setup.sh
+  - requirements.txt
+  - README
+  - TODO
 remotecss:
   - http://fonts.googleapis.com/css?family=Open+Sans
 css:
