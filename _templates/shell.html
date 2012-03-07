@@ -12,14 +12,11 @@
 <meta name="description" content="${description}" />
 <meta name="author" content="${author}" />
 
-% for href in remotecss:
+% for href in css:
 <link href="${href}" rel="stylesheet" type="text/css" />
 % endfor
-% for stylesheet in css:
-<link href="${root}/css/${stylesheet}" rel="stylesheet" type="text/css" />
-% endfor
-% for script in js:
-<script src="${root}/js/${script}"></script>
+% for href in js:
+<script src="${href}"></script>
 % endfor
 </head>
 <body>
