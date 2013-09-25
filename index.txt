@@ -3,8 +3,8 @@ template: bare.html
 
 ## Web
  
- * [twitter.com/](http://twitter.com/wcmaier)
- * [github.com/](http://github.com/wcmaier)
+ * [twitter.com/](http://twitter.com/whilp)
+ * [github.com/](http://github.com/whilp)
 
 ## Mail
 
